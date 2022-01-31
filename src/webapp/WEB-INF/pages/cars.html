@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Loop</title>
+</head>
+<body>
+<h1>Task 2.2.2 => Cars table</h1>
+<table border="1">
+    <tr>
+        <th>Engine</th>
+        <th>Developer</th>
+        <th>Colour</th>
+    </tr>
+    <tr th:each="car : ${carList}">
+        <td th:utext="${car.getEngine()}" ></td>
+        <td th:utext="${car.getDeveloper()}"></td>
+        <td th:utext="${car.getColour()}"></td>
+
+    </tr>
+</table>
+</ul>
+</body>
+</html>
